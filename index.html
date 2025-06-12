@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panificio da Mario</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdf6e3;
+      color: #333;
+    }
+    header {
+      background: #d2691e;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .prodotti, .orari, .contatti {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #d2691e;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .prodotto {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panificio da Mario</h1>
+    <p>Pane fresco, dolci artigianali e tradizione ogni giorno</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://via.placeholder.com/600x300?text=Panificio+da+Mario" alt="Panificio da Mario" style="width:100%; max-width:600px; border-radius: 10px;">
+  </section>
+
+  <section class="prodotti">
+    <h2>I nostri prodotti</h2>
+    <div class="grid">
+      <div class="prodotto">
+        <h3>Pane casereccio</h3>
+        <p>Cotto a legna, crosta croccante e cuore morbido.</p>
+      </div>
+      <div class="prodotto">
+        <h3>Focacce</h3>
+        <p>Condite con olio extravergine e ingredienti freschi.</p>
+      </div>
+      <div class="prodotto">
+        <h3>Dolci tradizionali</h3>
+        <p>Crostate, biscotti e torte fatti in casa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="orari">
+    <h2>Orari di apertura</h2>
+    <ul>
+      <li>Lunedì - Sabato: 7:00 - 13:00 / 16:00 - 20:00</li>
+      <li>Domenica: 7:00 - 13:00</li>
+    </ul>
+  </section>
+
+  <section class="contatti">
+    <h2>Contatti</h2>
+    <p><strong>Telefono:</strong> 0123 456789</p>
+    <p><strong>Email:</strong> panificiomario@example.com</p>
+    <p><strong>Indirizzo:</strong> Via Pane, 123 – Napoli</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.610068384067!2d14.25181431612414!3d40.8517987793169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0845c6315db5%3A0x7b614a2c50fc7ac7!2sNapoli!5e0!3m2!1sit!2sit!4v1610000000000" allowfullscreen></iframe>
+  </section>
+
+</body>
+</html>
