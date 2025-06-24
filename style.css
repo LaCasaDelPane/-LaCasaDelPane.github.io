@@ -30,14 +30,13 @@ h2 {
   gap: 1rem;
 }
 
-/* Pulsanti prodotti */
 .prodotto {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 200px;
+  height: 250px;               /* qui */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   color: white;
@@ -46,8 +45,9 @@ h2 {
   font-size: 1.2rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  background-size: cover;
+  background-size: cover;       /* o "contain" se vuoi */
   background-position: center;
+  background-repeat: no-repeat; /* aggiungi questa */
 }
 
 /* Overlay scuro per contrasto testo */
