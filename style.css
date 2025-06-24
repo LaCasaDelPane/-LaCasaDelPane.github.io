@@ -37,7 +37,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 250px; /* altezza giusta per mostrare immagine */
+  height: 250px;
+  min-height: 200px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   color: white;
@@ -46,10 +47,17 @@ h2 {
   font-size: 1.2rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  background-size: cover; /* copre tutta l'area */
+  background-size: contain;  /* cambia da cover a contain */
   background-position: center;
-  background-repeat: no-repeat; /* evita ripetizioni */
+  background-repeat: no-repeat;
+  background-color: yellow; /* debug area */
 }
+
+/* Disabilita overlay temporaneamente */
+.prodotto::before {
+  content: none !important;
+}
+
 
 /* Overlay scuro per contrasto testo */
 .prodotto::before {
