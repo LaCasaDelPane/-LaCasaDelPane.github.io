@@ -96,16 +96,32 @@ h2 {
 
 /* Immagini di sfondo personalizzate */
 .btn-pane {
-  background-image: url('img/pane.jpg');
+  background: url('img/pane.jpg') center/cover no-repeat;
+  color: white;
 }
 
 .btn-ciabatte {
-  background-image: url('img/ciabatte.jpg');
+  background: url('img/ciabatte.jpg') center/cover no-repeat;
+  color: white;
 }
 
 .btn-pizzette {
-  background-image: url('img/pizzette.jpg');
+  background: url('img/pizzette.jpg') center/cover no-repeat;
+  color: white;
 }
+
+/* Migliora la leggibilità di titolo e descrizione */
+.btn-pane h3,
+.btn-ciabatte h3,
+.btn-pizzette h3,
+.btn-pane p,
+.btn-ciabatte p,
+.btn-pizzette p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
 
 /* WhatsApp floating button */
 .whatsapp-float {
