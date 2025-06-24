@@ -110,8 +110,13 @@ h2 {
 }
 
 .btn-pizzette {
-  background-image: url('img/pizzette.jpg'); /* correggi typo da 'pezzette' a 'pizzette' */
+  background-image: url('https://raw.githubusercontent.com/LaCasaDelPane/lacasadelpane.github.io/refs/heads/main/img/pezzette.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
+
 
 /* Footer e whatsapp come prima */
 footer {
