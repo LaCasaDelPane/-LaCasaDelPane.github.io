@@ -52,13 +52,19 @@ footer {
   background-color: #25D366;
   color: white;
   font-size: 1.5rem;
-  padding: 0.6rem 0.9rem;
+  width: 48px;          /* fissa larghezza */
+  height: 48px;         /* fissa altezza */
+  padding: 0;           /* togli padding */
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: background 0.3s;
+
+  display: flex;        /* usa flexbox */
+  justify-content: center; /* centra orizzontalmente */
+  align-items: center;     /* centra verticalmente */
 }
 .whatsapp-float:hover {
   background-color: #1ebe5d;
