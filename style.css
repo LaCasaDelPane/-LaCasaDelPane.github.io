@@ -47,17 +47,11 @@ h2 {
   font-size: 1.2rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  background-size: contain;  /* cambia da cover a contain */
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: yellow; /* debug area */
 }
-
-/* Disabilita overlay temporaneamente */
-.prodotto::before {
-  content: none !important;
-}
-
 
 /* Overlay scuro per contrasto testo */
 .prodotto::before {
@@ -111,12 +105,7 @@ h2 {
 
 .btn-pizzette {
   background-image: url('https://raw.githubusercontent.com/LaCasaDelPane/lacasadelpane.github.io/refs/heads/main/img/pezzette.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
 }
-
 
 /* Footer e whatsapp come prima */
 footer {
