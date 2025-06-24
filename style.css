@@ -13,7 +13,7 @@ header {
 }
 
 section {
-  padding: 2rem 1rem; /* aggiungo padding orizzontale per non far uscire contenuti su mobile */
+  padding: 2rem 1rem; /* padding orizzontale per mobile */
   max-width: 900px;
   margin: auto;
 }
@@ -26,17 +26,18 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* più stretti per mobile */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* colonna fluida */
   gap: 1rem;
 }
 
+/* Pulsanti prodotti */
 .prodotto {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 250px;               /* qui */
+  height: 250px; /* altezza giusta per mostrare immagine */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   color: white;
@@ -45,9 +46,9 @@ h2 {
   font-size: 1.2rem;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  background-size: cover;       /* o "contain" se vuoi */
+  background-size: cover; /* copre tutta l'area */
   background-position: center;
-  background-repeat: no-repeat; /* aggiungi questa */
+  background-repeat: no-repeat; /* evita ripetizioni */
 }
 
 /* Overlay scuro per contrasto testo */
@@ -70,14 +71,14 @@ h2 {
 }
 
 /* Titolo e descrizione dentro il pulsante */
-.prodotto h3, 
+.prodotto h3,
 .prodotto p {
   position: relative;
   z-index: 1;
   margin: 0;
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.75rem;
   background-color: rgba(0,0,0,0.5);
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .prodotto h3 {
@@ -101,7 +102,7 @@ h2 {
 }
 
 .btn-pizzette {
-  background-image: url('img/pezzette.jpg');
+  background-image: url('img/pizzette.jpg'); /* correggi typo da 'pezzette' a 'pizzette' */
 }
 
 /* Footer e whatsapp come prima */
