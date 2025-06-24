@@ -23,7 +23,134 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rembody {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f1;
+  color: #333;
+}
+
+header {
+  background: #b3541e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #b3541e;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+}
+
+/* Basi per ogni prodotto */
+.prodotto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background-size: cover;
+  background-position: center;
+}
+
+.prodotto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.prodotto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.prodotto h3, .prodotto p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Immagini di sfondo personalizzate */
+.btn-pane {
+  background-image: url('img/pane.jpg');
+}
+
+.btn-ciabatte {
+  background-image: url('img/ciabatte.jpg');
+}
+
+.btn-pizzette {
+  background-image: url('img/pizzette.jpg');
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+
+/* WhatsApp link nella sezione contatti */
+.whatsapp-btn {
+  display: inline-flex;
+  background-color: #25D366;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  align-items: center;
+  gap: 8px;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
 }
 .prodotto {
   background: white;
